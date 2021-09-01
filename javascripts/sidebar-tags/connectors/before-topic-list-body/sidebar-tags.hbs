@@ -1,0 +1,36 @@
+{{#unless site.mobileView}}
+  {{#if isDiscoveryList}}
+    {{#unless hideSidebar}}
+    <div class="discourse-sidebar-full">
+      <div class="discourse-sidebar-child">
+        <div class="sidebar-tags-list">
+          <h3 class="tags-list-title">Safegraph Referral Program!</h3>
+<p>
+The SafeGraph Community has a referral program. Invite your friends and colleagues by submitting their information on 
+<a target="_blank" href="https://go.safegraph.com/community-referrals.html">this page</a>.
+</p>
+<ul>
+
+<li>Every 5 referrals receive a $40 Visa gift when they accept your invite and download at least 1 dataset
+</li>
+<li>Every referral is worth 1 entry into our monthly raffle of $150
+</li>
+</ul>
+        </div>
+      </div>
+      <div class="discourse-sidebar-child">
+        <div class="sidebar-tags-list">
+          <h3 class="events-title">Events</h3>
+          {{#if false}}
+          {{#each events as |event|}}
+              <li>{{format-date event.starts_at}} <a href="{{event.post.url}}">{{event.name}}</a></li>
+          {{/each}}
+          {{/if}}
+          Visit the <a href="/events">SafeGraph’s Event page</a> to see upcoming events and past recordings. Learn best practices and more about how others utilize SafeGraph data 
+        </div>
+      </div>
+    </div>
+    {{/unless}}
+  {{/if}}
+{{/unless}}
+
